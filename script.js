@@ -104,6 +104,10 @@ $(document).ready(function(){
 				'background-color':'rgba(0,0,0,0.7)',
 				'color':'white'
 			})
+			$('.coverpg').css({
+				'transform':'translateY(-'+st/10+'px)',
+				'-webkit-filter': 'blur(' + st/160 + 'px)'
+			})
 		}else if(st >= $('#page1').offset().top - 55 && st < $('#page2').offset().top - 65){
 			$('.hitem').css({
 				'background-color':'rgba(0,0,0,0)',
@@ -112,6 +116,10 @@ $(document).ready(function(){
 			$('#h2').css({
 				'background-color':'rgba(0,0,0,0.7)',
 				'color':'white'
+			})
+			$('.coverpg').css({
+				'transform':'translateY(-'+st/10+'px)',
+				'-webkit-filter': 'blur(0px)'
 			})
 		}else if(st >= $('#page2').offset().top - 65 && st < $('#page3').offset().top - 65){
 			$('.hitem').css({
